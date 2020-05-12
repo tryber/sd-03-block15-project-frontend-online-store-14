@@ -8,7 +8,7 @@ class Carrinho extends React.Component {
         <img src={Image} Alt="Carrinho de Compras" data-testid="shopping-cart-button" />
         <p data-testid="shopping-cart-empty-message">Seu carrinho está vazio</p>
       </div>
-    )
+    );
   }
 }
 
