@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Image from '../image/box.png';
-import ImageBack from '../image/back.png'
+import ImageBack from '../image/back.png';
 
 export class Shopping extends Component {
   render() {
