@@ -1,6 +1,6 @@
 .Home {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .Category {
@@ -15,8 +15,8 @@
 
 .Input {
   border-radius: 10px;
-  margin: 0 20px 10px;
   height: 20px;
+  margin: 0 20px 10px;
   width: 90%;
 }
 
@@ -29,8 +29,8 @@
   align-items: baseline;
   border-bottom: 1px black dotted;
   display: flex;
-  justify-content: center;
   height: 5%;
+  justify-content: center;
   margin: auto;
   width: 220%;
 }
