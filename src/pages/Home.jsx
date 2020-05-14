@@ -1,6 +1,6 @@
 import React from 'react';
-import Search from '../components/Search'
-import Categories from '../components/Categories'
+import Search from '../components/Search';
+import Categories from '../components/Categories';
 import * as api from '../services/api';
 import '../styles/Categories.css';
 
