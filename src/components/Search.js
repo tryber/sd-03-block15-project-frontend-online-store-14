@@ -8,19 +8,19 @@ class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      categories: [],
+      categoriesList: [],
       selectedCategory: '',
     };
   }
 
   componentDidMount() {
-    api.getCategories().then((categories) => {
-      this.setState({ categories });
+    api.getCategories().then((categoriesList) => {
+      this.setState({ categoriesList });
     });
   }
 
   render() {
-    const { categories, selectedCategory } = this.state;
+    const { categoriesList, selectedCategory } = this.state;
     return (
       <div>
         <input type="text" />
@@ -31,9 +31,9 @@ class Search extends React.Component {
           Digite algum termo de pesquisa ou escolha uma categoria.
         </label>
         <Categories
-          categories={categories}
+          categoriesList={categoriesList}
           selectedCategory={selectedCategory}
-          onCategoryChange={async (event) => {
+          categoryChange={async (event) => {
             await this.setState({ selectedCategory: event.target.value });
           }}
         />

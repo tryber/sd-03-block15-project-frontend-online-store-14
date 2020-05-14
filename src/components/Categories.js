@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 export class Categories extends Component {
   render() {
-    const { selectedCategory, onCategoryChange, categories } = this.props;
+    const { selectedCategory, categoryChange, categoriesList } = this.props;
 
-    return categories.map(({ id, name }) => (
+    return categoriesList.map(({ id, name }) => (
       <div key={id}>
         <input
           data-testid="category"
@@ -13,7 +13,7 @@ export class Categories extends Component {
           value={id}
           name="categories"
           checked={selectedCategory === id}
-          onChange={onCategoryChange}
+          onChange={categoryChange}
         />
         <label htmlFor={id}>{name}</label>
       </div>
