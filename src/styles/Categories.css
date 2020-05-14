@@ -1,0 +1,9 @@
+.Category {
+  align-items: baseline;
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 auto 30px;
+  padding: 0 20px 10px 20px;
+  width: 20%;
+}
