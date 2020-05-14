@@ -1,0 +1,41 @@
+.Home {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Category {
+  align-items: baseline;
+  border-right: 1px black dotted;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 auto 30px;
+  padding: 0 20px 10px;
+  width: 20%;
+}
+
+.Input {
+  border-radius: 10px;
+  height: 20px;
+  margin: 0 20px 10px;
+  width: 90%;
+}
+
+.Icon-car {
+  margin: 20px 50px 0 0;
+  width: 30px;
+}
+
+.Search {
+  align-items: baseline;
+  border-bottom: 1px black dotted;
+  display: flex;
+  height: 5%;
+  justify-content: center;
+  margin: auto;
+  width: 220%;
+}
+
+.Lista {
+  height: 5%;
+  width: 220%;
+}
