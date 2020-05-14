@@ -2,7 +2,7 @@ import React from 'react';
 import Search from '../components/Search';
 import Categories from '../components/Categories';
 import * as api from '../services/api';
-import '../styles/Categories.css';
+import '../styles/Home.css';
 
 class Home extends React.Component {
   constructor(props) {
@@ -22,8 +22,7 @@ class Home extends React.Component {
   render() {
     const { categoriesList, selectedCategory } = this.state;
     return (
-      <div>
-        <Search />
+      <div className="Home">
         <div className="Category">
           <h2>Categorias</h2>
           <Categories
@@ -33,6 +32,9 @@ class Home extends React.Component {
               await this.setState({ selectedCategory: event.target.value });
             }}
           />
+        </div>
+        <div>
+          <Search />
         </div>
       </div>
     );

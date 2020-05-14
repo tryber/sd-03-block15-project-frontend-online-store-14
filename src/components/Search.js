@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Image from '../image/carrinho.png';
-import '../styles/Search.css';
 
 class Search extends React.Component {
   render() {
     return (
-      <div className="Container">
-        <header className="Header">
-          <input type="text" className="Input" />
+      <div>
+        <header className="Search">
+          <input type="search" className="Input" />
           <Link to={'/Shopping'}>
             <img
               src={Image}
@@ -17,10 +16,12 @@ class Search extends React.Component {
               className="Icon-car"
             />
           </Link><br />
-          <label htmlFor="Barra-Pesquisa" data-testid="home-initial-message">
-            Digite algum termo de pesquisa ou escolha uma categoria.
-          </label>
         </header>
+        <div className="Lista">
+          <p data-testid="home-initial-message">
+            Digite algum termo de pesquisa ou escolha uma categoria.
+          </p>
+        </div>
       </div>
     );
   }
