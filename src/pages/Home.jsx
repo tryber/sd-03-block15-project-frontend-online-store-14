@@ -21,10 +21,10 @@ class Home extends React.Component {
   }
 
   render() {
-    const { categoriesList, selectedCategory } = this.state;
+    const { categoriesList, selectedCategory, products } = this.state;
     return (
-      <div className="Home">
-        <div className="Category">
+      <div className='Home'>
+        <div className='Category'>
           <h2>Categorias</h2>
           <Categories
             categoriesList={categoriesList}
@@ -36,12 +36,15 @@ class Home extends React.Component {
         </div>
         <div>
           <Search />
-          <div className="Lista">
-            { products }
-          <p data-testid="home-initial-message">
-            Digite algum termo de pesquisa ou escolha uma categoria.
-          </p>
-        </div>
+          <div className='Lista'>
+            {products !== null ?
+              <ProductList products={products} />
+            : (
+              <p data-testid='home-initial-message'>
+                Digite algum termo de pesquisa ou escolha uma categoria.
+              </p>
+            )}
+          </div>
         </div>
       </div>
     );

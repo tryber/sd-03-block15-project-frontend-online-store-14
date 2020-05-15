@@ -18,11 +18,6 @@ class Search extends React.Component {
             />
           </Link><br />
         </header>
-        <div className="Lista">
-          <p data-testid="home-initial-message">
-            Digite algum termo de pesquisa ou escolha uma categoria.
-          </p>
-        </div>
       </div>
     );
   }

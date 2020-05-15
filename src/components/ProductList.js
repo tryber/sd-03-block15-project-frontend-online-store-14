@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProductCard from './products/ProductCard';
+import ProductCard from './ProductCard';
 
 class ProductList extends Component {
   render() {
