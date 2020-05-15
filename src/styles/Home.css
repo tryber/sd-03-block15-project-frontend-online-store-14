@@ -36,6 +36,11 @@
 }
 
 .Lista {
-  height: 5%;
-  width: 220%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Card {
+  border: 1px black solid;
+  width: 200px;
 }

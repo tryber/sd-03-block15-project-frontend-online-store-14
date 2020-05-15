@@ -11,14 +11,22 @@ class Home extends React.Component {
     this.state = {
       categoriesList: [],
       selectedCategory: '',
-      products: [],
+      products: null,
     };
+    this.componentDidMount = this.componentDidMount.bind(this);
+    this.searchProducts = this.searchProducts.bind(this);
   }
 
   componentDidMount() {
     api.getCategories().then((categoriesList) => {
       this.setState({ categoriesList });
     });
+  }
+
+  searchProducts(query) {
+    const { selectedCategory } = this.state;
+    api.getProductsFromCategoryAndQuery(selectedCategory, query)
+      .then((products) => this.setState({ products: products.results }));
   }
 
   render() {
@@ -36,15 +44,15 @@ class Home extends React.Component {
           />
         </div>
         <div>
-          <Search />
-          <div className='Lista'>
+          <Search onChange={this.searchProducts} />
+          <div>
             {products !== null ?
               <ProductList products={products} />
-            : (
-              <p data-testid='home-initial-message'>
-                Digite algum termo de pesquisa ou escolha uma categoria.
-              </p>
-            )}
+              : (
+                <p data-testid='home-initial-message'>
+                  Digite algum termo de pesquisa ou escolha uma categoria.
+                </p>
+              )}
           </div>
         </div>
       </div>
