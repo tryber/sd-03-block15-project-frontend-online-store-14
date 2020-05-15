@@ -1,0 +1,189 @@
+[33mcommit 6589c17042fe3552ada1f50ac69acdf33db5a7db[m[33m ([m[1;36mHEAD -> [m[1;32mEstilo-CSS[m[33m, [m[1;31morigin/Estilo-CSS[m[33m)[m
+Merge: 6352f6f e13883b
+Author: Luis Campos <60624512+luis-campos@users.noreply.github.com>
+Date:   Thu May 14 20:09:21 2020 -0300
+
+    Merge branch 'master' into Estilo-CSS
+
+[33mcommit 6352f6f0153a9c7c38aed2725cb4bbc4a8651dc6[m
+Author: luis.campos <gucampos845@gmail.com>
+Date:   Thu May 14 20:08:19 2020 -0300
+
+    Correção CodeClimate
+
+[33mcommit df7c172562bd7c47e2954e83b3a308e0da0556a4[m
+Author: luis.campos <gucampos845@gmail.com>
+Date:   Thu May 14 20:01:55 2020 -0300
+
+    Correção de estilos CSS
+
+[33mcommit e13883bd7bd50f39e60eda7a9e072878bada33ba[m
+Merge: 87454fc cf30106
+Author: Luis Campos <60624512+luis-campos@users.noreply.github.com>
+Date:   Thu May 14 18:26:39 2020 -0300
+
+    Merge pull request #6 from tryber/Estilo-CSS
+    
+    Estilização da pagina inicial
+
+[33mcommit cf301063fcc3ea214e7f1ef24f5ff2de7f26b739[m
+Author: luis.campos <gucampos845@gmail.com>
+Date:   Thu May 14 18:18:04 2020 -0300
+
+    Correção CodeClimate
+
+[33mcommit 00732f05b2c2383dcb9b06bab47e8cc39bc39648[m
+Author: luis.campos <gucampos845@gmail.com>
+Date:   Thu May 14 18:13:01 2020 -0300
+
+    Estilização da pagina inicial
+
+[33mcommit 87454fc392e5b32de67151e4ae418a365f9fe864[m
+Merge: b7b1ca7 e722671
+Author: Lucas França Rangel <60445696+lucasfranca90@users.noreply.github.com>
+Date:   Thu May 14 14:51:16 2020 -0300
+
+    Merge pull request #5 from tryber/feature/category-list
+    
+    Requisito 4 passando
+
+[33mcommit e7226710d2aa9c71557a508054def3dbdfaf7416[m[33m ([m[1;31morigin/feature/category-list[m[33m)[m
+Author: Lucas Franca <luc.rangel90@gmail.com>
+Date:   Thu May 14 13:15:15 2020 -0300
+
+    pequena refatoracao
+
+[33mcommit 7304356601e3b6073845fac5c9931cff24e6918c[m
+Author: Lucas Franca <luc.rangel90@gmail.com>
+Date:   Thu May 14 13:07:02 2020 -0300
+
+    cc
+
+[33mcommit 0e8a425b8e7fe1b77046d6436f660af2ac7f00eb[m
+Author: Lucas Franca <luc.rangel90@gmail.com>
+Date:   Thu May 14 13:02:54 2020 -0300
+
+    requisito 4 passando
+
+[33mcommit b7b1ca77ee0b7b8ac9c5aa6ea27466ce49cc62fb[m
+Merge: 6e2729f 1db027d
+Author: Lucas França Rangel <60445696+lucasfranca90@users.noreply.github.com>
+Date:   Thu May 14 12:21:17 2020 -0300
+
+    Merge pull request #4 from tryber/feature/shopping-page
+    
+    Feature/shopping page
+
+[33mcommit 1db027d27145f723fe24ce5ee3353c4e2659d276[m[33m ([m[1;31morigin/feature/shopping-page[m[33m)[m
+Author: Lucas Franca <luc.rangel90@gmail.com>
+Date:   Wed May 13 19:33:20 2020 -0300
+
+    codeClimate
+
+[33mcommit 4e3cc2f669587a2ec59ccb8714a33120078d3e68[m
+Author: Lucas Franca <luc.rangel90@gmail.com>
+Date:   Wed May 13 19:12:18 2020 -0300
+
+    cc
+
+[33mcommit 3ac2723a0f85fbab61904eb5f520909835be8eb9[m
+Author: Lucas Franca <luc.rangel90@gmail.com>
+Date:   Wed May 13 19:04:48 2020 -0300
+
+    cc
+
+[33mcommit 6f43212ac9976d5d499e0b25e45b8e122b6a228f[m
+Author: Lucas Franca <luc.rangel90@gmail.com>
+Date:   Wed May 13 18:52:41 2020 -0300
+
+    botão finalizado
+
+[33mcommit 926967b7157b05b1ac568e26e43ce67d5c6107b2[m
+Author: Lucas Franca <luc.rangel90@gmail.com>
+Date:   Wed May 13 18:21:46 2020 -0300
+
+    mudanças na pagina de compras
+
+[33mcommit e31f3a39018efdf2ef9b877697459d27f5666f6c[m
+Author: Lucas Franca <luc.rangel90@gmail.com>
+Date:   Wed May 13 15:59:20 2020 -0300
+
+    new branch
+
+[33mcommit 6e2729fd2f97aeb45917d43c72a7366c118d953b[m
+Merge: bd56a8c 84cfb7d
+Author: Luis Campos <60624512+luis-campos@users.noreply.github.com>
+Date:   Wed May 13 15:31:17 2020 -0300
+
+    Merge pull request #3 from tryber/tela-inicial
+    
+    Requisitos 1, 2 e 3 feitos
+
+[33mcommit 84cfb7d1f578312ef67b025d8d2e71c10963dfb4[m[33m ([m[1;31morigin/tela-inicial[m[33m, [m[1;32mtela-inicial[m[33m)[m
+Author: luis.campos <gucampos845@gmail.com>
+Date:   Tue May 12 19:59:10 2020 -0300
+
+    Teste do avaliador
+
+[33mcommit acc225bf34037fd7bc32c4588a43f372b1d41fbd[m
+Author: luis.campos <gucampos845@gmail.com>
+Date:   Tue May 12 19:57:19 2020 -0300
+
+    Teste do avaliador
+
+[33mcommit 56c096ed4beb047b565435da6ac95b6406d0b2c1[m
+Author: luis.campos <gucampos845@gmail.com>
+Date:   Tue May 12 17:39:39 2020 -0300
+
+    CodeClimate
+
+[33mcommit f360e2831321950c2a65c64bceaa9e9ed99b433c[m
+Author: luis.campos <gucampos845@gmail.com>
+Date:   Tue May 12 17:36:57 2020 -0300
+
+    Correção codeCliamte
+
+[33mcommit 4ede595e7107fd3ffb68edab6762716d93b03a1d[m
+Author: luis.campos <gucampos845@gmail.com>
+Date:   Tue May 12 17:35:12 2020 -0300
+
+    Correção codeCliamte
+
+[33mcommit aa2d4700d59f05fc52818aa77f8dfb6d782d2d5d[m
+Author: luis.campos <gucampos845@gmail.com>
+Date:   Tue May 12 17:30:24 2020 -0300
+
+    Requisitos 2 e 3
+
+[33mcommit 341a07114b822e99cee3ec1cf7d9a805b3e7190f[m
+Author: luis.campos <gucampos845@gmail.com>
+Date:   Tue May 12 16:57:32 2020 -0300
+
+    Branch renomeada
+
+[33mcommit bd56a8c53617920fb8a7eda7343211f3a1f20f8b[m[33m ([m[1;31morigin/luis-campos-project-frontend-online-store-14[m[33m)[m
+Merge: d44ec80 cee61ca
+Author: Antônio Augusto <antonioabritto@gmail.com>
+Date:   Mon May 11 01:02:19 2020 -0300
+
+    Merge pull request #1 from tryber/antoniosb-patch-1
+    
+    Update README.md
+
+[33mcommit cee61ca25177b4825f45e74dd0129778c346be5a[m
+Author: Antônio Augusto <antonioabritto@gmail.com>
+Date:   Mon May 11 00:47:11 2020 -0300
+
+    Update main.yml
+
+[33mcommit 6726d11b9bd9fadc6b46ebc1928950a095d3d552[m
+Author: Antônio Augusto <antonioabritto@gmail.com>
+Date:   Mon May 11 00:46:38 2020 -0300
+
+    Update README.md
+
+[33mcommit d44ec80ea39637c0da1b067808fd4c0a6babe219[m
+Author: Jean Paulo Silva Vasconcelos <jean.vasconcelos6@gmail.com>
+Date:   Mon May 11 00:23:19 2020 -0300
+
+    Initial commit
