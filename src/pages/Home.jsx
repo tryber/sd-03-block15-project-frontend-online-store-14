@@ -11,6 +11,7 @@ class Home extends React.Component {
     this.state = {
       categoriesList: [],
       selectedCategory: '',
+      products: [],
     };
   }
 
