@@ -7,7 +7,8 @@ class Search extends React.Component {
     return (
       <div>
         <header className="Search">
-          <input type="search" className="Input" />
+          <input type="search" data-testid="query-input" className="Input" />
+          <button type="Search" data-testid="query-button">Buscar</button>
           <Link to={'/Shopping'}>
             <img
               src={Image}
