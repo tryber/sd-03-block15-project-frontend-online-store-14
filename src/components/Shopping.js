@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Image from '../image/emptybox.png';
 import ImageBack from '../image/back.png';
-import '../styles/Shopping.css'
+import '../styles/Shopping.css';
 
 export class Shopping extends Component {
   render() {
@@ -16,8 +16,9 @@ export class Shopping extends Component {
         <section className="Section">
           <img src={Image} alt="empty-box" className="Icon-box" />
           <p
-            data-testid="shopping-cart-empty-message" className="Empty-text">
-            Seu&nbsp;Carrinho&nbsp;Está&nbsp;Vazio
+            data-testid="shopping-cart-empty-message" className="Empty-text"
+          >
+            Seu&nbsp;carrinho&nbsp;está&nbsp;vazio
           </p>
         </section>
       </div>
