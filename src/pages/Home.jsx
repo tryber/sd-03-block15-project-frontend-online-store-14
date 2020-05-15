@@ -2,6 +2,7 @@ import React from 'react';
 import Search from '../components/Search';
 import Categories from '../components/Categories';
 import * as api from '../services/api';
+import ProductList from '../components/ProductList';
 import '../styles/Home.css';
 
 class Home extends React.Component {
@@ -10,7 +11,10 @@ class Home extends React.Component {
     this.state = {
       categoriesList: [],
       selectedCategory: '',
+      products: null,
     };
+    this.componentDidMount = this.componentDidMount.bind(this);
+    this.searchProducts = this.searchProducts.bind(this);
   }
 
   componentDidMount() {
@@ -19,8 +23,14 @@ class Home extends React.Component {
     });
   }
 
+  searchProducts(query) {
+    const { selectedCategory } = this.state;
+    api.getProductsFromCategoryAndQuery(selectedCategory, query)
+      .then((products) => this.setState({ products: products.results }));
+  }
+
   render() {
-    const { categoriesList, selectedCategory } = this.state;
+    const { categoriesList, selectedCategory, products } = this.state;
     return (
       <div className="Home">
         <div className="Category">
@@ -34,7 +44,14 @@ class Home extends React.Component {
           />
         </div>
         <div>
-          <Search />
+          <Search onChange={this.searchProducts} />
+          {products !== null ?
+            <ProductList products={products} />
+            : (
+              <p data-testid="home-initial-message">
+                Digite algum termo de pesquisa ou escolha uma categoria.
+              </p>
+            )}
         </div>
       </div>
     );
