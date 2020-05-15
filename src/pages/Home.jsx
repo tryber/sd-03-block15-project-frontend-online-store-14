@@ -45,15 +45,13 @@ class Home extends React.Component {
         </div>
         <div>
           <Search onChange={this.searchProducts} />
-          <div>
-            {products !== null ?
-              <ProductList products={products} />
-              : (
-                <p data-testid="home-initial-message">
-                  Digite algum termo de pesquisa ou escolha uma categoria.
-                </p>
-              )}
-          </div>
+          {products !== null ?
+            <ProductList products={products} />
+            : (
+              <p data-testid="home-initial-message">
+                Digite algum termo de pesquisa ou escolha uma categoria.
+              </p>
+            )}
         </div>
       </div>
     );

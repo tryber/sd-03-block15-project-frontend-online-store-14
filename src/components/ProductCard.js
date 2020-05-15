@@ -8,16 +8,22 @@ class ProductCard extends Component {
     const { title, price, thumbnail, id } = product;
     return (
       <div className="Card" data-testid="product">
-        <p>{title}</p>
-        <img src={thumbnail} alt={title} />
-        <p>{`Preço: ${price}`}</p>
-        <Link
-          to={{ pathname: `/product/${id}`, state: { title, thumbnail, price } }}
-          className="btn btn-danger"
-          data-testid="product-detail-link"
-        >
-          Detalhes
+        <div className="Title">
+          <p>{title}</p>
+        </div>
+        <div>
+          <img src={thumbnail} alt={title} className="Image" />
+          <p>{`Preço: ${price}`}</p>
+        </div>
+        <div className="Link">
+          <Link
+            to={{ pathname: `/product/${id}`, state: { title, thumbnail, price } }}
+            className="btn btn-danger"
+            data-testid="product-detail-link"
+          >
+            Detalhes
         </Link>
+        </div>
       </div>
     );
   }
