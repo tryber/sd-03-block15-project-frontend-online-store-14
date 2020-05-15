@@ -8,8 +8,8 @@
   border-right: 1px black dotted;
   display: flex;
   flex-direction: column;
-  margin: 0 0 auto 30px;
-  padding: 0 20px 10px;
+  margin: 0 0 auto 5px;
+  padding: 0 0 10px 10px;
   width: 20%;
 }
 
@@ -17,7 +17,8 @@
   border-radius: 10px;
   height: 20px;
   margin: 0 20px 10px;
-  width: 90%;
+  outline: 0;
+  width: 80%;
 }
 
 .Icon-car {

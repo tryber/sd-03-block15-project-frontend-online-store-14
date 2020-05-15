@@ -1,0 +1,29 @@
+.Container {
+  display: block;
+}
+
+.Header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Back-icon {
+  margin: 15px;
+  width: 30px;
+}
+
+.Section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Icon-box {
+  margin: 10% 5px 0 5px;
+  width: 250px;
+}
+
+.Empty-text {
+  font-size: 17pt;
+  font-weight: 600;
+}
