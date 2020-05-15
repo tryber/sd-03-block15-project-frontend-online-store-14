@@ -18,7 +18,7 @@ export class Shopping extends Component {
           <p
             data-testid="shopping-cart-empty-message" className="Empty-text"
           >
-            Seu&nbsp;Carrinho&nbsp;Está&nbsp;Vazio
+            Seu&nbsp;carrinho&nbsp;está&nbsp;vazio
           </p>
         </section>
       </div>
