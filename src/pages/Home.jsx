@@ -32,8 +32,8 @@ class Home extends React.Component {
   render() {
     const { categoriesList, selectedCategory, products } = this.state;
     return (
-      <div className='Home'>
-        <div className='Category'>
+      <div className="Home">
+        <div className="Category">
           <h2>Categorias</h2>
           <Categories
             categoriesList={categoriesList}
@@ -49,7 +49,7 @@ class Home extends React.Component {
             {products !== null ?
               <ProductList products={products} />
               : (
-                <p data-testid='home-initial-message'>
+                <p data-testid="home-initial-message">
                   Digite algum termo de pesquisa ou escolha uma categoria.
                 </p>
               )}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ProductCard from './ProductCard';
-import '../styles/Home.css'
+import '../styles/Home.css';
 
 class ProductList extends Component {
   render() {
