@@ -34,7 +34,7 @@ class Home extends React.Component {
     return (
       <div className="Home">
         <div className="Category">
-          <h2>Categorias</h2>
+          <h2>Categorias:</h2>
           <Categories
             categoriesList={categoriesList}
             selectedCategory={selectedCategory}
