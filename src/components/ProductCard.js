@@ -20,6 +20,7 @@ class ProductCard extends Component {
             to={{ pathname: `/product/${id}`, state: { title, thumbnail, price } }}
             className="btn btn-danger"
             data-testid="product-detail-link"
+            product={product}
           >
             Detalhes
         </Link>
