@@ -15,12 +15,20 @@ class Home extends React.Component {
     };
     this.componentDidMount = this.componentDidMount.bind(this);
     this.searchProducts = this.searchProducts.bind(this);
+    this.selectSearch = this.selectSearch.bind(this);
   }
 
   componentDidMount() {
     api.getCategories().then((categoriesList) => {
       this.setState({ categoriesList });
     });
+  }
+
+  selectSearch(id) {
+    const { selectedCategory } = this.state;
+    this.setState({ selectedCategory: id });
+    api.getProductsFromCategoryAndQuery(id, '')
+      .then(object => this.setState({ products: object.results }))
   }
 
   searchProducts(query) {
@@ -36,11 +44,9 @@ class Home extends React.Component {
         <div className="Category">
           <h2>Categorias:</h2>
           <Categories
+            handleChange={this.selectSearch}
             categoriesList={categoriesList}
             selectedCategory={selectedCategory}
-            categoryChange={async (event) => {
-              await this.setState({ selectedCategory: event.target.value });
-            }}
           />
         </div>
         <div>
