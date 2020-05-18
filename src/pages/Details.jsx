@@ -6,7 +6,7 @@ class Details extends React.Component {
     const { location: { state: { price, title, thumbnail } } } = this.props;
     return (
       <div>
-        <img src={thumbnail} alt='Produto' />
+        <img src={thumbnail} alt="Produto" />
         <p data-testid="product-detail-name">{`${title} - R$${price}`}</p>
         <Link to="/">Volta</Link>
       </div>
