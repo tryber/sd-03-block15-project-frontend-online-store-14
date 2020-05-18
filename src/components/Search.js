@@ -16,7 +16,7 @@ class Search extends React.Component {
     const { onChange } = this.props;
     const { queryText } = this.state;
     return (
-      <div>
+      <div className="Top">
         <header className="Search">
           <input
             type="search"
@@ -27,6 +27,7 @@ class Search extends React.Component {
           <button
             type="submit"
             data-testid="query-button"
+            className="Btn-busca"
             onClick={() => onChange(queryText)}
           >
             Buscar
