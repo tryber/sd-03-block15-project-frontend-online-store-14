@@ -25,10 +25,9 @@ class Home extends React.Component {
   }
 
   selectSearch(id) {
-    const { selectedCategory } = this.state;
     this.setState({ selectedCategory: id });
     api.getProductsFromCategoryAndQuery(id, '')
-      .then(object => this.setState({ products: object.results }))
+      .then((object) => this.setState({ products: object.results }));
   }
 
   searchProducts(query) {

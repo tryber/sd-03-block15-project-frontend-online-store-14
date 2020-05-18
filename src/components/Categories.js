@@ -10,9 +10,7 @@ export class Categories extends Component {
           data-testid="category"
           type="radio"
           id={id}
- 
           name="categories"
-
           onChange={() => handleChange(id)}
         />
         <label htmlFor={id}>{name}</label>

@@ -28,7 +28,7 @@ body {
   border-bottom: 1px black dotted;
   display: flex;
   height: 5%;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-left: 10px;
 }
 
