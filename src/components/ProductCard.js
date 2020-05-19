@@ -3,12 +3,20 @@ import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 
 class ProductCard extends Component {
-  addItems() {
-    conts {
-      products: {
-      sessionStorage.setItem(title, price, thumbnail, id)}
-    } = this.props;
+  constructor(props) {
+    super(props);
+
+    this.addItems = this.addItems.bind(this);
   }
+
+  addItems() {
+    const { product } = this.props;
+    const storage = localStorage.setItem('item', JSON.stringify([{ ...product }])); 
+    const teste = JSON.parse(localStorage.getItem('Item'));
+    console.log(teste);
+    return storage;
+  }
+
   render() {
     const { product } = this.props;
     const { title, price, thumbnail, id } = product;
@@ -30,12 +38,14 @@ class ProductCard extends Component {
           >
             Detalhes
         </Link>
-        <button
-        data-testid="product-add-to-cart"
-        onClick={addItems}
-        >Adicionar ao carrinho</button>
+          <button
+            data-testid="product-add-to-cart"
+            onClick={this.addItems}
+          >
+            Adicionar ao carrinho
+          </button>
         </div>
-      </div>
+      </div >
     );
   }
 }
