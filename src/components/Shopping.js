@@ -14,12 +14,14 @@ export class Shopping extends Component {
           </Link>
         </header>
         <section className="Section">
+          {/* { products === null ? */}
           <img src={Image} alt="empty-box" className="Icon-box" />
           <p
             data-testid="shopping-cart-empty-message" className="Empty-text"
           >
             Seu&nbsp;carrinho&nbsp;está&nbsp;vazio
           </p>
+          // }
         </section>
       </div>
     );

@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 
 class ProductCard extends Component {
+  addItems() {
+    conts {
+      products: {
+      sessionStorage.setItem(title, price, thumbnail, id)}
+    } = this.props;
+  }
   render() {
     const { product } = this.props;
     const { title, price, thumbnail, id } = product;
@@ -24,6 +30,10 @@ class ProductCard extends Component {
           >
             Detalhes
         </Link>
+        <button
+        data-testid="product-add-to-cart"
+        onClick={addItems}
+        >Adicionar ao carrinho</button>
         </div>
       </div>
     );
