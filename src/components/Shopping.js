@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import ProductList from '../components/ProductList';
 import Image from '../image/emptybox.png';
 import ImageBack from '../image/back.png';
 import '../styles/Shopping.css';
 
 export class Shopping extends Component {
   render() {
+    const itens = localStorage.getItem('item');
     return (
       <div className="Container">
         <header className="Header">
@@ -14,14 +16,24 @@ export class Shopping extends Component {
           </Link>
         </header>
         <section className="Section">
-          {/* { products === null ? */}
-          <img src={Image} alt="empty-box" className="Icon-box" />
-          <p
-            data-testid="shopping-cart-empty-message" className="Empty-text"
-          >
-            Seu&nbsp;carrinho&nbsp;está&nbsp;vazio
-          </p>
-          // }
+          {itens !== null ?
+            <div>
+              {console.log(itens.length)
+              }
+              <ul>
+                <li>{itens}</li>
+              </ul>
+            </div>
+            :
+            <div>
+              <img src={Image} alt="empty-box" className="Icon-box" />
+              <p
+                data-testid="shopping-cart-empty-message" className="Empty-text"
+              >
+                Seu&nbsp;carrinho&nbsp;está&nbsp;vazio
+              </p>
+            </div>
+          }
         </section>
       </div>
     );
