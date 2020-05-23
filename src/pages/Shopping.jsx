@@ -10,16 +10,14 @@ export class Shopping extends Component {
     return (
       <div className="Container">
         <header className="Header">
-          <Link to={'/'}>
-            <img src={ImageBack} alt="back-button" className="Back-icon" />
-          </Link>
+          <Link to={'/'}><img src={ImageBack} alt="back-button" className="Back-icon" /></Link>
         </header>
         <section className="Section">
           {itens !== null &&
             <div>
               <h2 data-testid="shopping-cart-product-quantity">Quantidade: {itens.length}</h2>
-              {itens.map((element, index) =>
-                <div data-testid="shopping-cart-product-name" key={index}>
+              {itens.map((element) =>
+                <div data-testid="shopping-cart-product-name" key={element.id}>
                   <p>{element.title}</p>
                   <img src={element.thumbnail} alt={element.title} className="Image" />
                 </div>)
