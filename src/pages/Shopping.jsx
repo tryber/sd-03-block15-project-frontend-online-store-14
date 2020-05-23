@@ -18,18 +18,18 @@ export class Shopping extends Component {
           {itens !== null &&
             <div>
               <h2 data-testid="shopping-cart-product-quantity">Quantidade: {itens.length}</h2>
-              {itens.map((element, index) => <div data-testid="shopping-cart-product-name" key={index}>
-                <p>{element.title}</p>
-                <img src={element.thumbnail} alt={element.title} className="Image" />
-              </div>)}
+              {itens.map((element, index) =>
+                <div data-testid="shopping-cart-product-name" key={index}>
+                  <p>{element.title}</p>
+                  <img src={element.thumbnail} alt={element.title} className="Image" />
+                </div>)
+              }
             </div>
           }
           {itens === null &&
             <div>
               <img src={Image} alt="empty-box" className="Icon-box" />
-              <p
-                data-testid="shopping-cart-empty-message" className="Empty-text"
-              >
+              <p data-testid="shopping-cart-empty-message" className="Empty-text">
                 Seu&nbsp;carrinho&nbsp;está&nbsp;vazio
               </p>
             </div>
