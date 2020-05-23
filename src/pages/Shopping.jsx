@@ -28,7 +28,7 @@ export class Shopping extends Component {
           Seu&nbsp;carrinho&nbsp;está&nbsp;vazio
         </p>
       </div>
-    )
+    );
   }
 
   render() {
