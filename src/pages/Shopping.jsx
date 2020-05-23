@@ -5,6 +5,12 @@ import ImageBack from '../image/back.png';
 import '../styles/Shopping.css';
 
 export class Shopping extends Component {
+  constructor(props) {
+    super(props);
+    
+    this.produtos = this.produtos.bind(this);
+    this.carVazio = this.carVazio.bind(this);
+  }
 
   produtos(itens) {
     return (
