@@ -11,7 +11,13 @@ class ProductCard extends Component {
 
   addItems() {
     const { product } = this.props;
-    const storage = localStorage.setItem('item', JSON.stringify([{ ...product }])); 
+    if (localStorage.getItem("item")) {
+      const itens = JSON.parse(localStorage.getItem("item"));
+      const updateStorage = localStorage.setItem
+        ('item', JSON.stringify([...itens, { ...product }]));
+      return updateStorage;
+    }
+    const storage = localStorage.setItem('item', JSON.stringify([{ ...product }]));
     return storage;
   }
 
