@@ -1,33 +1,14 @@
 import React from 'react';
 
-class Storage extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.addItems = this.addItems.bind(this);
+function Storage() {
+  const { product } = this.props;
+  if (sessionStorage.getItem('item')) {
+    const itens = JSON.parse(sessionStorage.getItem('item'));
+    const upStorage = sessionStorage.setItem('item', JSON.stringify([...itens, { ...product }]));
+    return upStorage;
   }
-
-  addItems() {
-    const { product } = this.props;
-    if (localStorage.getItem('item')) {
-      const itens = JSON.parse(localStorage.getItem('item'));
-      const upStorage = localStorage.setItem('item', JSON.stringify([...itens, { ...product }]));
-      return upStorage;
-    }
-    const storage = localStorage.setItem('item', JSON.stringify([{ ...product }]));
-    return storage;
-  }
-
-  render() {
-    return (
-      <button
-        data-testid="product-add-to-cart"
-        onClick={this.addItems}
-      >
-        Adicionar ao carrinho
-      </button>
-    );
-  }
+  const storage = sessionStorage.setItem('item', JSON.stringify([{ ...product }]));
+  return storage;
 }
 
 export default Storage;
