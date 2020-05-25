@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Storage from '../components/Storage';
 import '../styles/Home.css';
 
 class ProductCard extends Component {
@@ -17,15 +18,15 @@ class ProductCard extends Component {
         </div>
         <div className="Link">
           <Link
-            to={{ pathname: `/product/${id}`, state: { title, thumbnail, price } }}
+            to={{ pathname: `/product/${id}`, state: { product } }}
             className="btn btn-danger"
             data-testid="product-detail-link"
-            product={product}
           >
             Detalhes
-        </Link>
+          </Link>
+          <Storage product={product} test={'product-add-to-cart'} />
         </div>
-      </div>
+      </div >
     );
   }
 }
