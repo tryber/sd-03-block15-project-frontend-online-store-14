@@ -22,7 +22,7 @@ class Details extends React.Component {
         </Link><br />
         <Link to="/">Volta</Link>
         <div>
-          <textarea data-testid="product-detail-evaluation"></textarea>
+          <textarea data-testid="product-detail-evaluation" />
         </div>
       </div>
     );
