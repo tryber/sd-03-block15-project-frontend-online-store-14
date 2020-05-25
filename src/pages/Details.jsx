@@ -11,7 +11,7 @@ class Details extends React.Component {
       <div>
         <img src={thumbnail} alt="Produto" />
         <p data-testid="product-detail-name">{`${title} - R$${price}`}</p>
-        <Storage product={product} test={"product-detail-add-to-cart"} />
+        <Storage product={product} test={'product-detail-add-to-cart'} />
         <Link to={'/Shopping'}>
           <img
             src={Image}

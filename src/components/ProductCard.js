@@ -24,7 +24,7 @@ class ProductCard extends Component {
           >
             Detalhes
           </Link>
-          <Storage product={product} test={"product-add-to-cart"}/>
+          <Storage product={product} test={'product-add-to-cart'} />
         </div>
       </div >
     );
