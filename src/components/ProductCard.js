@@ -1,25 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Storage from '../components/Storage';
 import '../styles/Home.css';
 
 class ProductCard extends Component {
-  constructor(props) {
-    super(props);
-
-    this.addItems = this.addItems.bind(this);
-  }
-
-  addItems() {
-    const { product } = this.props;
-    if (localStorage.getItem('item')) {
-      const itens = JSON.parse(localStorage.getItem('item'));
-      const upStorage = localStorage.setItem('item', JSON.stringify([...itens, { ...product }]));
-      return upStorage;
-    }
-    const storage = localStorage.setItem('item', JSON.stringify([{ ...product }]));
-    return storage;
-  }
-
   render() {
     const { product } = this.props;
     const { title, price, thumbnail, id } = product;
@@ -40,12 +24,7 @@ class ProductCard extends Component {
           >
             Detalhes
           </Link>
-          <button
-            data-testid="product-add-to-cart"
-            onClick={this.addItems}
-          >
-            Adicionar ao carrinho
-          </button>
+          <Storage product={product} test={"product-add-to-cart"}/>
         </div>
       </div >
     );
